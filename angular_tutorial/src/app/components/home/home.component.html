@@ -2,10 +2,18 @@
 <div class="container mx-auto px-4 py-16 min-h-[612px]">
     <div class="bg-white shadow-lg rounded-lg p-8 text-center">
         <!-- Title -->
-        <h1 class="text-4xl font-bold text-gray-800 mb-4">Chào Mừng Đến Với Trang Chủ Của Chúng Tôi!</h1>
+        <h1 class="text-4xl font-bold text-gray-800 mb-12">Chào Mừng Đến Với Trang Chủ Của Chúng Tôi!</h1>
 
+        <owl-carousel-o [options]="customOptions">
+            <ng-template carouselSlide *ngFor="let img of imagesList">
+                <div class="carousel-container">
+                    <img src={{img}} class="carousel-img" />
+                </div>
+            </ng-template>
+        </owl-carousel-o>
+        
         <!-- Description -->
-        <p class="text-gray-600 text-lg mb-6">
+        <p class="text-gray-600 text-lg mt-12 mb-6">
             Khám phá các dịch vụ và sản phẩm mà chúng tôi cung cấp để mang đến giá trị tốt nhất cho bạn. Cùng tìm hiểu
             thêm về chúng tôi và những gì chúng tôi có thể làm cho bạn.
         </p>
