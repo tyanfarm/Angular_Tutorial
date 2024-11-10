@@ -3,6 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.body-container {
+    min-height: 600px;
+}
+
 .carousel-container {
     width: 100%;
     display: flex;

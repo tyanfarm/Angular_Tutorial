@@ -1,0 +1,11 @@
+<main class="body-container mx-auto px-4 py-10">
+    <div class="grid gap-6 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
+
+        <!-- List of Abilities names -->
+        
+        <div *ngFor="let ability of abilityList" class="bg-white shadow-md rounded-lg p-4 text-center">
+            <p class="text-lg font-semibold text-gray-800">{{ ability.name }}</p>
+        </div>
+        
+    </div>
+</main>
