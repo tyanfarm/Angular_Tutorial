@@ -10,7 +10,10 @@ import { HomeComponent } from './components/home/home.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';  
 import { HttpClientModule } from '@angular/common/http';
-import { PokemonComponent } from './components/pokemon/pokemon.component'; 
+import { PokemonComponent } from './components/pokemon/pokemon.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component'; 
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,13 +23,17 @@ import { PokemonComponent } from './components/pokemon/pokemon.component';
     AboutComponent,
     HomeComponent,
     PokemonComponent,
+    LoginComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CarouselModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

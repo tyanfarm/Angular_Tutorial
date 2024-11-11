@@ -25,4 +25,13 @@
 - `Tutorial`: https://www.npmjs.com/package/ngx-owl-carousel-o/v/16.0.0?activeTab=readme
 - Must `import { BrowserAnimationsModule } from '@angular/platform-browser/animations';`
 
-## Test
+## Directives
+- `*ngIf`: xuat hien hoac khong
+- `ng-container`: dong goi html thanh cac nhom (giong template)
+- `ngModel`: two-way binding
+- `ngClass`: dieu kien cho css (syntax --> `array_css_class: condition_params`)
+
+## Template-driven Form & Reactive Form
+- `Template-driven Form`: dung cac Directives de dieu chinh tren HTML
+- `Reactive Form`: cai dat dieu kien ben typescript
+- `import { FormsModule, ReactiveFormsModule } from '@angular/forms';`
