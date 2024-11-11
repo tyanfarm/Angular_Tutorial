@@ -23,14 +23,12 @@ export class RegisterComponent {
     email: new FormControl('', [Validators.required, Validators.email]),
     password: new FormControl('', [
       Validators.required,
-      Validators.minLength(6),
       Validators.pattern(this.passwordPattern)
     ]),
 
     confirmPassword: new FormControl('', 
       [
         Validators.required, 
-        Validators.minLength(6),
       ])
   });
 

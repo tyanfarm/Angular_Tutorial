@@ -16,7 +16,7 @@ export class LoginComponent {
   };
 
   public submitUser() {
-    console.log("User submitted");
+    console.log(this.user);
     alert("User submitted");
   }
 } 
