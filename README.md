@@ -21,3 +21,5 @@
 - `npm i ngx-owl-carousel-o@16.0.0`
 - `Tutorial`: https://www.npmjs.com/package/ngx-owl-carousel-o/v/16.0.0?activeTab=readme
 - Must `import { BrowserAnimationsModule } from '@angular/platform-browser/animations';`
+
+## Test
