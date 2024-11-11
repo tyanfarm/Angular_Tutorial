@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Inject, Injectable } from '@angular/core';
+import { API_URL } from '../tokens/token';
+import { map, Observable } from 'rxjs';
 import { Ability } from '../models/ability';
 
 
@@ -8,13 +9,15 @@ import { Ability } from '../models/ability';
   providedIn: 'root'
 })
 export class AbilityService {
-  private apiUrl = 'https://pokeapi.co/api/v2/'
 
-  constructor(private http: HttpClient) { }
+  constructor(private httpClient: HttpClient, @Inject(API_URL) public apiUrl: string) { }
 
-  // public getAbilities(): Observable<Ability[]> {
-  //   return this.http.get<AbilityResponse>(this.apiUrl).pipe(
-  //     map((response: AbilityResponse) => response.results.map((item) => ({ name: item.name })))
-  //   );
+  // public getPokemonAbilities(): Observable<Ability[]>{
+  //   return this.httpClient.get<Ability[]>(this.apiUrl + 'ability');
   // }
+  public getPokemonAbilities(offset: number, limit: number): Observable<Ability[]> {
+    return this.httpClient.get<any>(this.apiUrl + `ability?offset=${offset}&limit=${limit}`).pipe(
+      map((res) => res.results)     
+    );
+  }
 }

@@ -1,5 +1,4 @@
-import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Ability } from 'src/app/models/ability';
 import { AbilityService } from 'src/app/services/ability.service';
 
@@ -9,22 +8,25 @@ import { AbilityService } from 'src/app/services/ability.service';
   styles: [
   ]
 })
-export class PokemonComponent implements OnInit {
-  abilityList: Array<Ability> = new Array<Ability>(); 
+export class PokemonComponent {
+  // abilityList: Array<Ability> = new Array<Ability>(); 
+  abilityList: Ability[] = [];
   
-  constructor(private http: HttpClient) {
+  constructor(private abilityService: AbilityService) {
 
   }
   
-  ngOnInit(): void {
-    this.fetchDetails();
+  
+  ngOnInit() {
+    this.abilityService.getPokemonAbilities(0, 48).subscribe((data: Ability[]) => {
+      this.abilityList = data;
+    });
   }
+    
 
-  public fetchDetails() {
-    this.http.get('https://pokeapi.co/api/v2/ability/').subscribe(
-      (res: any) => {
-        console.log(res)
-      }
-    );
-  }
+  // ngOnDestroy() {
+
+  // }
+
+
 }

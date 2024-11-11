@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 .body-container {
-    min-height: 600px;
+    min-height: 800px;
 }
 
 .carousel-container {
