@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { catchError } from 'rxjs';
 import { User } from 'src/app/models/user';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -8,15 +11,30 @@ import { User } from 'src/app/models/user';
   ]
 })
 export class LoginComponent {
-  user: User = {
-    fullname: '',
-    email: '',
-    password: '',
-    confirmPassword: ''
-  };
+  public user: User = new User();
+
+  constructor(private authService: AuthService, private router: Router) { }
+
+  ngOnInit() {
+    if (localStorage.getItem('token') || localStorage.getItem('refreshToken')) {
+      this.router.navigate(['/profile']);
+    }
+  }
 
   public submitUser() {
-    console.log(this.user);
-    alert("User submitted");
+    this.authService.loginUser(this.user.email, this.user.password)
+        .subscribe(
+          (data) => {
+            console.log(data);
+            localStorage.setItem('token', data.token);
+            localStorage.setItem('refreshToken', data.refreshToken);
+            // this.router.navigate(['/profile']);
+            window.location.href = '/profile';
+          },
+          (error) => {
+            console.log(error);
+          }
+        )
   }
+
 } 

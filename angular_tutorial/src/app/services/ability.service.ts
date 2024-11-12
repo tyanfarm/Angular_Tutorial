@@ -16,7 +16,7 @@ export class AbilityService {
   //   return this.httpClient.get<Ability[]>(this.apiUrl + 'ability');
   // }
   public getPokemonAbilities(offset: number, limit: number): Observable<Ability[]> {
-    return this.httpClient.get<any>(this.apiUrl + `ability?offset=${offset}&limit=${limit}`).pipe(
+    return this.httpClient.get<any>(`https://pokeapi.co/api/v2/ability?offset=${offset}&limit=${limit}`).pipe(
       map((res) => res.results)     
     );
   }
