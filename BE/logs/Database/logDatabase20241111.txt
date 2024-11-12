@@ -1,0 +1,8 @@
+2024-11-11 15:11:25.061 +07:00 [INF] Connection pool opened for server: { ClusterId : 2, EndPoint : "Unspecified/ac-l5cn5ed-shard-00-01.7uj73wn.mongodb.net:27017" }, Max size: 100
+2024-11-11 15:11:25.089 +07:00 [INF] Connection pool opened for server: { ClusterId : 2, EndPoint : "Unspecified/ac-l5cn5ed-shard-00-02.7uj73wn.mongodb.net:27017" }, Max size: 100
+2024-11-11 15:11:25.089 +07:00 [INF] Connection pool opened for server: { ClusterId : 2, EndPoint : "Unspecified/ac-l5cn5ed-shard-00-00.7uj73wn.mongodb.net:27017" }, Max size: 100
+2024-11-11 15:11:25.299 +07:00 [INF] Checking out connection from pool for server: { ClusterId : 2, EndPoint : "Unspecified/ac-l5cn5ed-shard-00-01.7uj73wn.mongodb.net:27017" }
+2024-11-11 15:11:25.312 +07:00 [INF] New connection created. Server: { ClusterId : 2, EndPoint : "Unspecified/ac-l5cn5ed-shard-00-01.7uj73wn.mongodb.net:27017" }, ConnectionId: 13
+2024-11-11 15:11:25.598 +07:00 [INF] Connection checked out from pool for server: { ClusterId : 2, EndPoint : "Unspecified/ac-l5cn5ed-shard-00-01.7uj73wn.mongodb.net:27017" }
+2024-11-11 15:11:25.707 +07:00 [INF] Connection checked in to pool for server: { ClusterId : 2, EndPoint : "Unspecified/ac-l5cn5ed-shard-00-01.7uj73wn.mongodb.net:27017" }
+2024-11-11 15:22:25.378 +07:00 [INF] Connection closed. Server: { ClusterId : 2, EndPoint : "Unspecified/ac-l5cn5ed-shard-00-01.7uj73wn.mongodb.net:27017" }
