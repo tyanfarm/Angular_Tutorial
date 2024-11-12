@@ -8,19 +8,19 @@
             <a routerLink="" class="text-gray-600 hover:text-blue-500">Home</a>
             <a routerLink="/about" class="text-gray-600 hover:text-blue-500">About</a>
             <a routerLink="/pokemon" class="text-gray-600 hover:text-blue-500">Pokemon</a>
-            <a href="#" class="text-gray-600 hover:text-blue-500">Contact</a>
+            <!-- <a href="#" class="text-gray-600 hover:text-blue-500">Contact</a> -->
         </nav>
 
         <!-- Login Button -->
         <div class="hidden md:block">
-            <div *ngIf="!isLoggedIn">
+            <div *ngIf="!(authService.isLoggedIn$ | async)">
                 <a routerLink="/login" class="px-4 py-2 bg-blue-500 text-white font-semibold rounded hover:bg-blue-600">Sign In</a>
                 <a routerLink="/register" class="ml-2 px-4 py-2 bg-blue-500 text-white font-semibold rounded hover:bg-blue-600">Sign Up</a>
             </div>
 
-            <div *ngIf="isLoggedIn">
+            <div *ngIf="(authService.isLoggedIn$ | async)">
                 <a routerLink="/profile" class="px-4 py-2 bg-blue-500 text-white font-semibold rounded hover:bg-blue-600">My Account</a>
-                <a (click)="logout()" class="cursor-pointer ml-2 px-4 py-2 bg-red-600 text-white font-semibold rounded hover:bg-red-400">Logout</a>
+                <a (click)="logOut()" class="cursor-pointer ml-2 px-4 py-2 bg-red-600 text-white font-semibold rounded hover:bg-red-400">Logout</a>
             </div>
         </div>
     </div>

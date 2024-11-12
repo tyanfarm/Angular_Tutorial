@@ -7,8 +7,9 @@ import { AuthService } from 'src/app/services/auth.service';
   templateUrl: './profile.component.html',
 })
 export class ProfileComponent {
-  public user: User = new User();
   private token: string = "";
+  public currentTab: string = "overview";
+  public user: User = new User();
 
   constructor(private authService: AuthService) {
     this.token = localStorage.getItem('token') || "";
@@ -23,6 +24,10 @@ export class ProfileComponent {
       this.user = data;
       // console.log(this.user.fullname);  
     });
+  }
+
+  public changeTab(tabName: string) {
+    this.currentTab = tabName;
   }
 
 }
