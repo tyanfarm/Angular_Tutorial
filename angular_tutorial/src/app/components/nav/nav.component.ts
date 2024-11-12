@@ -8,7 +8,7 @@ import { AuthService } from 'src/app/services/auth.service';
 export class NavComponent {
   constructor(public authService: AuthService) { }
 
-  public logOut() {
-    this.authService.logout();
+  public onLogOutClick() {
+    this.authService.logOut();
   }
 }

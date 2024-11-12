@@ -1,4 +1,3 @@
-import { HttpResponse } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { User } from 'src/app/models/user';
@@ -40,7 +39,7 @@ export class ChangePasswordComponent {
       .subscribe(
         (response) => {
           console.log("Change password successfully");
-          this.authService.logout();
+          this.authService.logOut();
         },
         (error) => {
           console.log("Change password failed");
