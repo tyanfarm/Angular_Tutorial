@@ -40,3 +40,11 @@
 - `Reactive Form`: cai dat dieu kien ben typescript
 - `import { FormsModule, ReactiveFormsModule } from '@angular/forms';`
 
+## Angular Material
+### mat-autocomplete
+- Component 
+- Tinh nang goi y tu dong khi user nhap vao o input.
+
+### mat-badge
+- Directive
+- Tao cac badge (bieu tuong nho) co the gan vao button, icon hoac phan tu HTML

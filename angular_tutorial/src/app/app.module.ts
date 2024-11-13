@@ -16,6 +16,23 @@ import { RegisterComponent } from './components/register/register.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProfileComponent } from './components/profile/profile.component';
 import { ChangePasswordComponent } from './components/change-password/change-password.component';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { AutocompleteComponent } from './components/material/autocomplete/autocomplete.component';
+import { BadgeComponent } from './components/material/badge/badge.component';
+import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
+import {MatBadgeModule} from '@angular/material/badge';
+import { TestComponent } from './components/test/test.component';
+import { MatDividerModule } from '@angular/material/divider';
+import { ButtonComponent } from './components/material/button/button.component';
+import { ButtonToggleComponent } from './components/material/button-toggle/button-toggle.component';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { CheckboxComponent } from './components/material/checkbox/checkbox.component';
+import { GridListComponent } from './components/material/grid-list/grid-list.component';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 @NgModule({
   declarations: [
@@ -29,6 +46,13 @@ import { ChangePasswordComponent } from './components/change-password/change-pas
     RegisterComponent,
     ProfileComponent,
     ChangePasswordComponent,
+    AutocompleteComponent,
+    BadgeComponent,
+    TestComponent,
+    ButtonComponent,
+    ButtonToggleComponent,
+    CheckboxComponent,
+    GridListComponent,
   ],
   imports: [
     BrowserModule,
@@ -37,7 +61,18 @@ import { ChangePasswordComponent } from './components/change-password/change-pas
     BrowserAnimationsModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    // material angular
+    MatAutocompleteModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatIconModule,
+    MatButtonModule,
+    MatBadgeModule,
+    MatDividerModule,
+    MatButtonToggleModule,
+    MatCheckboxModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
