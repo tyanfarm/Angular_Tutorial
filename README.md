@@ -51,3 +51,5 @@
 
 ## Config Translate i18n
 - `https://lokalise.com/blog/angular-i18n/`
+- `angular.json`: in `projects:name_prj:architect:build:options`
+  + add `"localize": true,`
