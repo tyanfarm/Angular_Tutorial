@@ -48,3 +48,6 @@
 ### mat-badge
 - Directive
 - Tao cac badge (bieu tuong nho) co the gan vao button, icon hoac phan tu HTML
+
+## Config Translate i18n
+- `https://lokalise.com/blog/angular-i18n/`
