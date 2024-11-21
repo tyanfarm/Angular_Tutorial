@@ -1,0 +1,72 @@
+@use '../../../styles.sass' as *
+
+.features-container
+    background-color: $background-color // Màu nền tổng thể
+    padding: 200px 0 160px
+
+    .header
+        margin-bottom: 4rem
+        font-size: 2.5rem
+        text-align: center
+        font-weight: 500
+        color: $text-main
+        line-height: 1.5
+
+    .content-container
+        mat-grid-tile
+            background-color: #26212e
+            border: 1px solid #374151
+            border-radius: 0.5rem
+            line-height: 1.5
+
+        .feature-center
+            border-radius: 16px
+            color: $text-main
+            text-align: center
+
+        .feature
+            display: block
+            margin: 0 3rem 
+
+            .app-preview img  
+                max-width: 400px
+                height: 350px
+                margin-top: 50px
+                border-radius: 0.5rem
+                box-shadow: 0 0 20px 0 rgba(0, 0, 0, 1)
+    
+@media (min-width: 810px) and (max-width: 1439px), (max-width: 809px)
+    .features-container
+        padding: 160px 40px
+
+@media (max-width: 809px)
+    .features-container
+        padding: 80px 40px
+
+        .header
+            font-size: 1.875rem
+            margin-bottom: 2rem
+
+        .content-container
+            .feature
+                .app-preview img
+                    display: none
+
+
+// ANIMATION
+.animate-on-scroll
+    opacity: 0
+    transform: translateX(-20px)
+    transition: all 0.5s ease
+
+.animate-on-scroll-right
+    opacity: 0
+    transform: translateX(20px)
+    transition: all 0.5s ease
+
+.animate-on-scroll.visible, 
+.animate-on-scroll-right.visible
+    opacity: 1
+    transform: translateX(0)
+
+

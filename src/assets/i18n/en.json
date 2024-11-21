@@ -1,0 +1,71 @@
+{
+    "HEROPAGE": {
+        "TITLE": "Unlock Market Insights with Ease and Maximize Your Trading Potential",
+        "SUBTITLE": "Discover technical patterns and identify trends to predict market movements effectively. Leverage accurate analysis to make informed investment decisions confidently."
+    },
+    "FEATURESPAGE": {
+        "TITLE": "We offer smart investment tracker",
+        "FEATUREFIRST": {
+            "TITLE": "AI-Powered Pattern Detection",
+            "DESCRIPTION": "Integrate AI-based vision detection to recognize technical patterns on various Financial Exchanges"
+        },
+        "FEATURESECOND": {
+            "TITLE": "Real-Time Market Alerts",
+            "DESCRIPTION": "Track market fluctuations and alert users whenever a new trend emerges"
+        },
+        "FEATURETHIRD": {
+            "TITLE": "Automated Technical Analysis",
+            "DESCRIPTION": "Support automatic analysis based on chart patterns and candlestick patterns"
+        },
+        "FEATUREFOURTH": {
+            "TITLE": "In-Depth Pattern Guides",
+            "DESCRIPTION": "Provide users with comprehensive guides on the two types of technical patterns in the application"
+        },
+        "FEATUREFIFTH": {
+            "TITLE": "Cross-Platform Accessibility",
+            "DESCRIPTION": "Stay connected to market insights on both iOS and Android devices"
+        }
+    },
+    "BENEFITSPAGE": {
+        "TITLE": "Discover the benefits of our app",
+        "BENEFITFIRST": {
+            "TITLE": "Save Time with Automation",
+            "DESCRIPTION": "Effortlessly analyze charts and candlestick patterns without manual effort"
+        },
+        "BENEFITSECOND": {
+            "TITLE": "Stay Ahead of Market Trends",
+            "DESCRIPTION": "Receive real-time alerts on emerging market patterns to seize opportunities promptly"
+        },
+        "BENEFITTHIRD": {
+            "TITLE": "Simplify Complex Analysis",
+            "DESCRIPTION": "Transform intricate chart data into actionable insights with easy-to-use tools"
+        },
+        "BENEFITFOURTH": {
+            "TITLE": "Learn While You Trade",
+            "DESCRIPTION": "Access in-depth guides to master technical analysis and enhance your trading skills"
+        }
+    },
+    "ADVANTAGESPAGE": {
+        "APPNAME": "AI Chart Pattern Scanner",
+        "TITLE": {
+            "FIRST": "Why",
+            "SECOND": "is right for you?"
+        },
+        "ADVANTAGEFIRST": {
+            "TITLE": "AI-Driven Precision",
+            "DESCRIPTION": "Leverage AI technology for insights in accuracy and reliability"
+        },
+        "ADVANTAGESECOND": {
+            "TITLE": "Generate Free Trading Signals",
+            "DESCRIPTION": "Allow users to generate free trading signals and make smarter trading decisions"
+        },
+        "ADVANTAGETHIRD": {
+            "TITLE": "Pay Only for Customization",
+            "DESCRIPTION": "Explore technical patterns and trading insights without any subscription charges"
+        }
+    },
+    "CTAPAGE": {
+        "TITLE": "Join a global network of members",
+        "BUTTON": "Subscribe"
+    }
+}

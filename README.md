@@ -1,50 +1,27 @@
-## Init Project
-- `npm i -g @angular/cli@16.1.0`
-- `ng version`
-- `ng new project_name`
-- `ng serve -o`
+# LandingPage
 
-## Install Tailwind CSS
-- https://tailwindcss.com/docs/guides/angular
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.0.
 
-## Create Component
-- `ng g c components/component_name` (default)
-- `ng g c components/component_name --skip-tests=true --inline-style` (Do not have css & spec.ts file)
+## Development server
 
-## Class
-- `ng g class models/model_name`
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Service
-- `ng g s services/service_name`
+## Code scaffolding
 
-## Interface
-- `ng g interface models/Ability`
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Carousel Module
-- `npm i ngx-owl-carousel-o@16.0.0`
-- `Tutorial`: https://www.npmjs.com/package/ngx-owl-carousel-o/v/16.0.0?activeTab=readme
-- Must `import { BrowserAnimationsModule } from '@angular/platform-browser/animations';`
+## Build
 
-## Components
-    - `@Input & @Output`: truyen du lieu giua 2 component parent-child
-    - `@ViewChild`: truy cap vao phan tu DOM / ChildComponent(su dung duoc tat ca cac func cua child)
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Directives
-- `*ngIf`: xuat hien hoac khong
-- `ng-container`: dong goi html thanh cac nhom (giong template)
-- `ngModel`: two-way binding
-- `ngClass`: dieu kien cho css (syntax --> `array_css_class: condition_params`)
+## Running unit tests
 
-## Template-driven Form & Reactive Form
-- `Template-driven Form`: dung cac Directives de dieu chinh tren HTML
-- `Reactive Form`: cai dat dieu kien ben typescript
-- `import { FormsModule, ReactiveFormsModule } from '@angular/forms';`
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Angular Material
-### mat-autocomplete
-- Component 
-- Tinh nang goi y tu dong khi user nhap vao o input.
+## Running end-to-end tests
 
-### mat-badge
-- Directive
-- Tao cac badge (bieu tuong nho) co the gan vao button, icon hoac phan tu HTML
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

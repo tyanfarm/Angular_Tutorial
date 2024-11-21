@@ -1,0 +1,55 @@
+.networks-container
+    background-color: #23202a
+    padding: 14rem 5rem
+    text-align: center
+
+    .header
+        margin-bottom: 4rem
+        font-size: 2.5rem
+        text-align: left
+        font-weight: 500
+        color: #fff
+        line-height: 1.5
+
+    .table-wrapper
+        overflow: hidden
+        border: 1px solid #374151
+        border-radius: 0.5rem
+
+        table
+            width: 100%
+            text-align: left
+            font-size: 1rem
+            color: #9ca3af
+
+            thead
+                background-color: #1f2937
+                color: #d1d5db
+                text-transform: uppercase
+
+                th
+                    padding: 1.5rem 1.5rem
+
+            tbody
+                tr
+                    background-color: #111827
+                    &:hover
+                        background-color: #1f2937
+
+                    td
+                        padding: 1rem 1.5rem
+
+                        &:first-child
+                            display: flex
+                            align-items: center
+                            gap: 0.75rem
+
+                            img
+                                width: 1.5rem
+                                height: 1.5rem
+
+                        &.positive
+                            color: #10b981 // Green ✔
+
+                        &.negative
+                            color: #ef4444 // Red ✘

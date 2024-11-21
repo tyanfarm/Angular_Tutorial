@@ -1,0 +1,71 @@
+{
+    "HEROPAGE": {
+        "TITLE": "Khám Phá Thị Trường Dễ Dàng và Tối Ưu Tiềm Năng Đầu Tư",
+        "SUBTITLE": "Phát hiện các mô hình kỹ thuật và xác định xu hướng để dự đoán chuyển động thị trường hiệu quả. Sử dụng phân tích chính xác để đưa ra các quyết định đầu tư sáng suốt."
+    },
+    "FEATURESPAGE": {
+        "TITLE": "Chúng tôi cung cấp công cụ theo dõi đầu tư thông minh",
+        "FEATUREFIRST": {
+            "TITLE": "Nhận Diện Mô Hình Bằng AI",
+            "DESCRIPTION": "Tích hợp công nghệ nhận diện bằng AI để phát hiện các mô hình kỹ thuật trên nhiều sàn giao dịch tài chính"
+        },
+        "FEATURESECOND": {
+            "TITLE": "Thông Báo Biến Động",
+            "DESCRIPTION": "Theo dõi biến động thị trường và gửi thông báo khi xu hướng mới xuất hiện"
+        },
+        "FEATURETHIRD": {
+            "TITLE": "Phân Tích Mô Hình Tự Động",
+            "DESCRIPTION": "Hỗ trợ phân tích tự động dựa trên các mô hình biểu đồ và mô hình nến"
+        },
+        "FEATUREFOURTH": {
+            "TITLE": "Hướng Dẫn Chi Tiết Về Mô Hình",
+            "DESCRIPTION": "Cung cấp cho người dùng các hướng dẫn toàn diện về hai loại mô hình kỹ thuật trong ứng dụng"
+        },
+        "FEATUREFIFTH": {
+            "TITLE": "Truy Cập Đa Nền Tảng",
+            "DESCRIPTION": "Luôn kết nối với thông tin thị trường trên cả thiết bị iOS và Android"
+        }
+    },
+    "BENEFITSPAGE": {
+        "TITLE": "Khám phá những lợi ích của ứng dụng chúng tôi",
+        "BENEFITFIRST": {
+            "TITLE": "Tiết Kiệm Thời Gian Với Tự Động Hóa",
+            "DESCRIPTION": "Dễ dàng phân tích biểu đồ và mô hình nến mà không cần thực hiện thủ công"
+        },
+        "BENEFITSECOND": {
+            "TITLE": "Nắm Bắt Xu Hướng Thị Trường Nhanh",
+            "DESCRIPTION": "Nhận thông báo sớm nhất về các xu hướng thị trường mới để nắm bắt cơ hội kịp thời"
+        },
+        "BENEFITTHIRD": {
+            "TITLE": "Đơn Giản Hóa Phân Tích Phức Tạp",
+            "DESCRIPTION": "Biến dữ liệu biểu đồ phức tạp thành thông tin dễ hiểu và dễ áp dụng"
+        },
+        "BENEFITFOURTH": {
+            "TITLE": "Học Hỏi Trong Khi Giao Dịch",
+            "DESCRIPTION": "Truy cập sổ tay hướng dẫn để nắm vững phân tích kỹ thuật và cải thiện kỹ năng giao dịch"
+        }
+    },
+    "ADVANTAGESPAGE": {
+        "APPNAME": "AI Chart Pattern Scanner",
+        "TITLE": {
+            "FIRST": "Tại sao",
+            "SECOND": "phù hợp với bạn?"
+        },
+        "ADVANTAGEFIRST": {
+            "TITLE": "Độ Chính Xác Dựa Trên AI",
+            "DESCRIPTION": "Tận dụng công nghệ AI để có cái nhìn chính xác và đáng tin cậy"
+        },
+        "ADVANTAGESECOND": {
+            "TITLE": "Nhận Tín Hiệu Giao Dịch Miễn Phí",
+            "DESCRIPTION": "Cho phép người dùng tạo tín hiệu giao dịch miễn phí và đưa ra quyết định đầu tư thông minh hơn"
+        },
+        "ADVANTAGETHIRD": {
+            "TITLE": "Chỉ Trả Phí Khi Tùy Biến",
+            "DESCRIPTION": "Khám phá các mô hình kỹ thuật và thông tin giao dịch mà không phải trả phí đăng ký"
+        }
+    },
+    "CTAPAGE": {
+        "TITLE": "Tham gia vào mạng lưới toàn cầu của các thành viên",
+        "BUTTON": "Đăng Ký"
+    }
+}

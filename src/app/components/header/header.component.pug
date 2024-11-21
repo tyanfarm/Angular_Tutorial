@@ -1,0 +1,21 @@
+.header-container
+    .logo
+        img(src="assets/images/robofi.png" alt="KriptoRealm Logo")
+
+    button.menu-button(mat-icon-button, [matMenuTriggerFor]="menu")
+        mat-icon menu 
+
+    mat-menu(#menu="matMenu")
+        button(mat-menu-item, routerLink="#", (click)="scrollToSection('home')") Home
+        button(mat-menu-item, routerLink="#", (click)="scrollToSection('benefits')") Benefits
+        button(mat-menu-item, routerLink="#", (click)="scrollToSection('advantages')") Advantages
+        button(mat-menu-item, routerLink="#", (click)="scrollToSection('features')") Explore features
+
+    nav.navigation
+        a(routerLink="#", (click)="scrollToSection('home')") Home
+        a(routerLink="#", (click)="scrollToSection('benefits')") Benefits
+        a(routerLink="#", (click)="scrollToSection('advantages')") Advantages
+
+    div.cta-button((click)="scrollToSection('features')") Explore features
+            
+

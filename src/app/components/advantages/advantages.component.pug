@@ -1,0 +1,29 @@
+.advantages-container 
+    .grid-container
+        .image-wrapper
+            img(src="assets/images/phone-why-use.png" alt="App Preview" class="app-preview")
+
+        .content-wrapper 
+            .section-title.animate-on-scroll 
+                | {{ "ADVANTAGESPAGE.TITLE.FIRST" | translate }} 
+                span.highlight {{ "ADVANTAGESPAGE.APPNAME" | translate }} 
+                | {{ "ADVANTAGESPAGE.TITLE.SECOND" | translate }}
+                    
+            ul.features-list 
+                li.feature-item.animate-on-scroll
+                    img(src="assets/images/purchasing-icon.png" alt="Simple Purchasing Icon" class="feature-icon")
+                    div
+                        h3.feature-title {{ "ADVANTAGESPAGE.ADVANTAGEFIRST.TITLE" | translate }}
+                        p.feature-description {{ "ADVANTAGESPAGE.ADVANTAGEFIRST.DESCRIPTION" | translate }}
+
+                li.feature-item.animate-on-scroll
+                    img(src="assets/images/academy-icon.png" alt="Academy Icon" class="feature-icon")
+                    div
+                        h3.feature-title {{ "ADVANTAGESPAGE.ADVANTAGESECOND.TITLE" | translate }}
+                        p.feature-description {{ "ADVANTAGESPAGE.ADVANTAGESECOND.DESCRIPTION" | translate }}
+
+                li.feature-item.animate-on-scroll
+                    img(src="assets/images/assistance-icon.png" alt="Customer Assistance Icon" class="feature-icon")
+                    div
+                        h3.feature-title {{ "ADVANTAGESPAGE.ADVANTAGETHIRD.TITLE" | translate }}
+                        p.feature-description {{ "ADVANTAGESPAGE.ADVANTAGETHIRD.DESCRIPTION" | translate }}

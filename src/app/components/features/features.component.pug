@@ -1,0 +1,43 @@
+.features-container
+    .header.animate-on-scroll {{ "FEATURESPAGE.TITLE" | translate }}
+
+    // Features Layout
+    .content-container 
+        mat-grid-list([cols]="gridCols", [rowHeight]="rowHeight", gutterSize="28px")
+            // Left Features
+            mat-grid-tile([colspan]="colLeftFeatures", [rowspan]="rowLeftFeatures", class="animate-on-scroll")
+                .feature
+                    .icon
+                        img(src="assets/images/crypto-icon.png" alt="Crypto diversification")
+                    h3.feature-title {{ "FEATURESPAGE.FEATUREFIRST.TITLE" | translate }}
+                    p.feature-description {{ "FEATURESPAGE.FEATUREFIRST.DESCRIPTION" | translate }}
+
+            mat-grid-tile([colspan]="colLeftFeatures", [rowspan]="rowLeftFeatures", class="animate-on-scroll-right")
+                .feature
+                    .icon
+                        img(src="assets/images/rocket-icon.png" alt="Dynamic rebalancing")
+                    h3.feature-title {{ "FEATURESPAGE.FEATURESECOND.TITLE" | translate }}
+                    p.feature-description {{ "FEATURESPAGE.FEATURESECOND.DESCRIPTION" | translate }}   
+
+            // Right Feature
+            mat-grid-tile([colspan]="colRightFeature", [rowspan]="rowRightFeature")
+                .feature.feature-center
+                    h3.feature-title {{ "FEATURESPAGE.FEATUREFIFTH.TITLE" | translate }}
+                    p.feature-description {{ "FEATURESPAGE.FEATUREFIFTH.DESCRIPTION" | translate }}
+                    .app-preview
+                        img.phone-preview(src="assets/images/phone-preview.png" alt="App Preview Frame")
+
+            // Left Features
+            mat-grid-tile([colspan]="colLeftFeatures", [rowspan]="rowLeftFeatures", class="animate-on-scroll")
+                .feature
+                    .icon
+                        img(src="assets/images/graph-icon.png" alt="Accessible investing")
+                    h3.feature-title {{ "FEATURESPAGE.FEATURETHIRD.TITLE" | translate }}
+                    p.feature-description {{ "FEATURESPAGE.FEATURETHIRD.DESCRIPTION" | translate }}
+
+            mat-grid-tile([colspan]="colLeftFeatures", [rowspan]="rowLeftFeatures", class="animate-on-scroll-right")
+                .feature
+                    .icon
+                        img(src="assets/images/chart-icon.png" alt="Trading charts")
+                    h3.feature-title {{ "FEATURESPAGE.FEATUREFOURTH.TITLE" | translate }}
+                    p.feature-description {{ "FEATURESPAGE.FEATUREFOURTH.DESCRIPTION" | translate }}

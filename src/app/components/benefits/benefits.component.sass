@@ -1,0 +1,99 @@
+@use '../../../styles.sass' as *
+    
+.benefits-container
+    color: $text-main
+    padding: 10rem 5rem
+
+    .section-title
+        margin-bottom: 4rem
+        font-size: 2.5rem
+        text-align: center
+        color: $text-main
+        font-weight: 500
+        line-height: 1.5
+
+    .main-content
+        display: grid
+        grid-template-columns: repeat(2, minmax(0, 1fr))
+        padding-top: 4rem
+
+        .features-section
+            display: grid
+            grid-template-columns: repeat(2, minmax(0, 1fr))
+            gap: 2rem
+
+        .feature-item
+            display: flex
+            align-items: flex-start
+
+            .feature-icon
+                background-color: #4e4063
+                padding: 1rem
+                border-radius: 50%
+
+            img
+                height: 1.5rem
+                width: 1.5rem
+
+            .feature-text
+                margin-left: 1.5rem
+                line-height: 1.5
+
+            .feature-title
+                font-size: 1.25rem
+                margin-bottom: 0.5rem
+
+            .feature-description
+                color: $text-content
+
+        .image-section
+            justify-self: center
+
+            img
+                width: 540px
+                border-radius: 1rem
+
+@media (min-width: 810px) and (max-width: 1439px)
+    .benefits-container
+        padding: 80px 40px
+
+        .main-content
+            grid-template-columns: repeat(1, minmax(0, 1fr))
+
+            .image-section
+                padding-top: 100px
+
+@media (max-width: 809px)
+    .benefits-container
+        padding: 80px 40px
+
+        .section-title
+            margin: 0
+            font-size: 1.875rem
+
+        .main-content
+            grid-template-columns: repeat(1, minmax(0, 1fr))
+            padding-top: 2rem
+
+            .features-section
+                grid-template-columns: repeat(1, minmax(0, 1fr))
+
+                .app-download-section
+                    flex-direction: column
+
+            .image-section
+                padding-top: 50px
+
+                img
+                    width: 60vw
+
+    
+// ANIMATION
+.animate-on-scroll
+    opacity: 0
+    transform: translateX(-20px)
+    transition: all 0.5s ease
+
+.animate-on-scroll.visible
+    opacity: 1
+    transform: translateX(0)   

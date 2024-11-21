@@ -1,0 +1,89 @@
+@use '../../../styles.sass' as *
+    
+.cta-container
+    display: grid
+    grid-template-columns: repeat(2, minmax(0, 1fr))
+    background: #23202a
+    color: $text-main
+    padding: 8rem 5rem
+
+    .cta-image
+        width: 100%
+        display: flex
+        justify-content: center
+        margin-bottom: 3rem 
+
+        img
+            width: 540px
+            z-index: 10
+
+    .cta-content
+        width: 100%
+        text-align: left
+
+        h2
+            font-size: 1.875rem 
+            font-weight: bold
+            margin-bottom: 1.5rem 
+
+        p
+            color: $text-content 
+            margin-bottom: 2rem 
+
+        .cta-form
+            display: flex
+            justify-content: left
+            padding: 0 8px
+
+            input
+                background: #23202a
+                color: black
+                padding: 1rem
+                font-size: 1rem
+                margin: 0 8px 0 4px 
+                border-radius: 12px
+                border: 1px solid #3d3d3d 
+                width: 66.66%
+
+                &:focus
+                    color: $text-white
+                    border: none
+
+            button
+                background: $button-color
+                color: white
+                padding: 0.75rem 2rem 
+                border-radius: 6px
+                font-size: 1rem
+                font-weight: 600
+                color: $text-black
+                border: none
+                cursor: pointer
+
+                &:hover
+                    background: $button-hover-color
+
+    
+
+@media (min-width: 810px) and (max-width: 1439px)
+    .cta-container
+        padding: 80px 40px
+        grid-template-columns: repeat(1, minmax(0, 1fr))
+
+
+@media (max-width: 809px)
+    .cta-container
+        padding: 160px 40px
+        grid-template-columns: repeat(1, minmax(0, 1fr))
+        
+        .cta-content
+            .cta-form
+                button
+                    width: 120px
+                    padding: 16px
+
+        .cta-image
+            img
+                width: 60vw
+                
+

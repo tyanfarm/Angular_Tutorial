@@ -1,0 +1,35 @@
+<div class="networks-container">
+    <div class="header">
+        Our app supports diverse blockchain networks & future growth
+    </div>
+
+    <div class="table-wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th>Chain</th>
+                    <th>Buy</th>
+                    <th>Sell</th>
+                    <th>Earn</th>
+                    <th>Swap</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of dataSource">
+                    <td>
+                        <img [src]="item.chain.icon" [alt]="item.chain.name">
+                        {{ item.chain.name }}
+                    </td>
+                    <td class="positive" *ngIf="item.buy">✔</td>
+                    <td class="negative" *ngIf="!item.buy">✘</td>
+                    <td class="positive" *ngIf="item.sell">✔</td>
+                    <td class="negative" *ngIf="!item.sell">✘</td>
+                    <td class="positive" *ngIf="item.earn">✔</td>
+                    <td class="negative" *ngIf="!item.earn">✘</td>
+                    <td class="positive" *ngIf="item.swap">✔</td>
+                    <td class="negative" *ngIf="!item.swap">✘</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

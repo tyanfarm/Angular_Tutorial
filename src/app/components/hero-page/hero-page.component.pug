@@ -1,0 +1,23 @@
+.hero-container 
+    // Left Content
+    .text-content.animate-on-scroll
+        h1 {{ "HEROPAGE.TITLE" | translate }}
+        p {{ "HEROPAGE.SUBTITLE" | translate }}
+        .download-buttons 
+            a.button([href]="iosUrl")
+                img(src="assets/images/appstore-button.png" alt="App Store")
+            a.button([href]="androidUrl")
+                img(src="assets/images/ggplay-button.png" alt="Google Play")
+        .download-qr
+            .qr-img
+                qrcode([width]="urlWidth", [qrdata]="iosUrl")
+            .qr-img
+                qrcode([width]="urlWidth", [qrdata]="androidUrl")
+        
+    // Right Content
+    .app-mockup
+        img.hero-img(src="assets/images/Hero.png" alt="App Mockup")
+        img.bitcoin-img(src="assets/images/hero-bitcoin.png" alt="Bitcoin icon")
+        img.ethereum-img(src="assets/images/hero-ethereum.png" alt="Ethereum icon")
+        img.cardano-img(src="assets/images/hero-cardano.png" alt="Cardano icon")
+            
