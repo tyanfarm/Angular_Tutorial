@@ -92,18 +92,19 @@
 
 @media (min-width: 810px) and (max-width: 1439px)
     .hero-container
-        padding: 100px
+        padding: 100px 40px
 
         .app-mockup
             width: 1000px
             transform: translate(45%, -5%)
 
-            .bitcoin-img, .ethereum-img, .cardano-img
+            // Only show bitcoin logo on tablet
+            .ethereum-img, .cardano-img
                 display: none
 
 @media (max-width: 809px)
     .hero-container
-        padding: 100px
+        padding: 100px 40px
         display: grid
         grid-template-columns: repeat(1, minmax(0, 1fr))
 
@@ -111,7 +112,7 @@
             max-width: 100vw
 
             h1
-                font-size: 1.75rem
+                font-size: 1.7rem
 
             .download-buttons
                 justify-content: center
